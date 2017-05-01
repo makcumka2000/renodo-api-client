@@ -8,7 +8,6 @@
     }
   ],
   "description": "Renodo REST API client",
-  "version": "dev-master",
   "require": {
     "php": ">=5.4",
     "nategood/httpful": "*"
