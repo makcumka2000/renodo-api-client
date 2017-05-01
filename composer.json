@@ -9,6 +9,9 @@
   ],
   "description": "Renodo REST API client",
   "version": "1.0.0",
+  "require": {
+    "nategood/httpful": "*"
+  },
   "autoload": {
     "psr-4": {
       "RenodoApiClient\\": "src/"
