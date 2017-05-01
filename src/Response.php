@@ -6,7 +6,7 @@
  * Time: 18:34
  */
 
-namespace RenodoApiClient\client;
+namespace RenodoApiClient;
 
 
 use RenodoApiClient\dto\ResponseDto;

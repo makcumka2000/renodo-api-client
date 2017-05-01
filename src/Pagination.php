@@ -6,7 +6,7 @@
  * Time: 19:42
  */
 
-namespace RenodoApiClient\client;
+namespace RenodoApiClient;
 
 
 use RenodoApiClient\dto\PaginationDto;

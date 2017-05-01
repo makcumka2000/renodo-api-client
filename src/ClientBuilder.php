@@ -6,13 +6,12 @@
  * Time: 19:46
  */
 
-namespace RenodoApiClient\client;
+namespace RenodoApiClient;
 
 
 use RenodoApiClient\httpClientAdapters\HttpClientAdapterInterface;
 use RenodoApiClient\httpClientAdapters\NateGoodHttpClientAdapter;
 use RenodoApiClient\interfaces\ClientBuilderInterface;
-use RenodoApiClient\interfaces\ClientInterface;
 
 class ClientBuilder implements ClientBuilderInterface
 {

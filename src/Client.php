@@ -1,6 +1,6 @@
 <?php
 
-namespace RenodoApiClient\client;
+namespace RenodoApiClient;
 
 use RenodoApiClient\dto\ResponseDto;
 use RenodoApiClient\httpClientAdapters\HttpClientAdapterInterface;
