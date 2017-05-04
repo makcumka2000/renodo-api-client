@@ -95,6 +95,57 @@ class Client implements ClientInterface
     }
 
     /**
+     * @param string $token
+     */
+    public function setToken($token)
+    {
+        $this->token = $token;
+    }
+
+    /**
+     * @param string $version
+     */
+    public function setVersion($version)
+    {
+        $this->version = $version;
+    }
+
+    /**
+     * @param $baseUrl string
+     */
+    public function setBaseUrl($baseUrl)
+    {
+        if(!$this->isItFullUrl($baseUrl)){
+            throw new \InvalidArgumentException('Base url must be url');
+        }
+        $this->baseUrl = $baseUrl;
+    }
+
+    /**
+     * @return string
+     */
+    public function getToken()
+    {
+        return $this->token;
+    }
+
+    /**
+     * @return string
+     */
+    public function getVersion()
+    {
+        return $this->version;
+    }
+
+    /**
+     * @return string
+     */
+    public function getBaseUrl()
+    {
+        return $this->baseUrl;
+    }
+
+    /**
      * @param ResponseDto $response
      * @return ResponseInterface
      */
@@ -145,32 +196,7 @@ class Client implements ClientInterface
             throw new \InvalidArgumentException('You must set baseUrl property');
     }
 
-    /**
-     * @param string $token
-     */
-    public function setToken($token)
-    {
-        $this->token = $token;
-    }
 
-    /**
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-        $this->version = $version;
-    }
-
-    /**
-     * @param $baseUrl string
-     */
-    public function setBaseUrl($baseUrl)
-    {
-        if(!$this->isItFullUrl($baseUrl)){
-            throw new \InvalidArgumentException('Base url must be url');
-        }
-        $this->baseUrl = $baseUrl;
-    }
 
 
 }

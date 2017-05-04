@@ -1,6 +1,7 @@
 <?php
 
 namespace RenodoApiClient\interfaces;
+use RenodoApiClient\Client;
 
 /**
  * Вспомогательный класс для построения клиента
@@ -34,8 +35,8 @@ interface ClientBuilderInterface
     public function setToken($token);
 
     /**
-     * @return ClientInterface
-     * @throws InvalidArgumentException
+     * @return Client
+     * @throws \InvalidArgumentException
      */
     public function build();
 

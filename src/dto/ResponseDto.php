@@ -29,11 +29,11 @@ class ResponseDto
     /**
      * @var array
      */
-    public $data;
+    public $data = [];
     /**
      * @var array
      */
-    public $headers;
+    public $headers = [];
     /**
      * @var string
      */

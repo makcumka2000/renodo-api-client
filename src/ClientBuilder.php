@@ -103,7 +103,7 @@ class ClientBuilder implements ClientBuilderInterface
      */
     private function guardIsItUrl($url){
         if(filter_var($url, FILTER_VALIDATE_URL) === FALSE){
-            throw new \InvalidArgumentException("{$url} is not URL");
+            throw new \InvalidArgumentException("{$url} is not URL", 100);
         };
     }
 
